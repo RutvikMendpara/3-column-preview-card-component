@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background: hsl(0, 0%, 95%);
+}
+
+.container {
+  width: 45%;
+  height: 70vh;
+  margin: auto;
+  margin-top: 200px;
+  line-height: 1.45;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  height: 50vh;
+  padding: 25px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 25px 0;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+}
+.box p {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.box1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.box3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid white;
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 35px;
+  margin-top: 50px;
+}
+
+.btn-1 {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+}
+.btn-1:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.btn-2 {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+}
+.btn-2:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+.btn-3 {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+}
+.btn-3:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+/* media  query */
+
+@media (max-width: 820px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .btn {
+    margin-top: 5px;
+  }
+  .box {
+    height: 45vh;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .box1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .box3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+
+  .attribution {
+    margin-bottom: 20%;
+  }
+}
